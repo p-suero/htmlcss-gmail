@@ -91,6 +91,7 @@ h3 {
     padding: 10px;
     border: 2px solid grey;
     border-radius: 40px;
+    cursor: pointer;
 }
 
 /* selettore footer */
