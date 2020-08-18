@@ -1,0 +1,102 @@
+/* i selettori seguono l'ordine della pagina html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sen', sans-serif;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.page-wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 5px dotted grey;
+}
+
+header img {
+    width: 120px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+main h2 {
+    margin: 30px 0;
+    text-align: center;
+}
+
+#actions, #email-list {
+    border-bottom: 2px solid grey;
+}
+
+#actions button {
+    display: block;
+}
+
+#actions #write-email {
+    background-color: red;
+    outline: 0;
+    border: 0;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+p#unread-email {
+    width: 28%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px dotted grey;
+    text-align: center;
+    cursor: pointer;
+}
+
+p#unread-email span {
+    display: inline-block;
+    width: 20px;
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#email-list {
+    padding: 20px 0;
+}
+
+#email-list h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#email-list p {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.email-item {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+footer p {
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+}

@@ -1,69 +1,79 @@
 <!DOCTYPE html>
-<html lang="it" dir="ltr">
+<html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
         <title>Gmail</title>
-        <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
-            <img src="img/logo-gmail.png" alt="logo-gmail">
-            <h1>Gmail</h1>
-        </header>
-        <main>
-            <!-- inizio parte dedicata ala gestione dei comandi della casella i posta -->
-            <nav id="management-section">
-                <h2>
-                    <strong>
-                        ...Benvenuto in Gmail...
-                    </strong>
-                </h2>
-                <div id="write-and-search">
-                    <input type="text" placeholder="Cerca nella posta">
-                    <button>Cerca</button>
-                    <p>Scrivi una nuova e-mail</p>
-                </div>
-                <div id="unread-message">
-                    <p>Hai
+        <div class="page-wrapper">
+            <!-- intestazione pagina -->
+            <header>
+                <img src="img/logo-gmail.png" alt="Logo Gmail">
+                <h1>Gmail</h1>
+            </header>
+            <main>
+                <h2>...Benvenuto in Gmail...</h2>
+                <!-- blocco contenente gli elementi per la gestione della casella -->
+                <div id="actions">
+                    <div id="search-email">
+                        <input type="text" value="Cerca nella posta...">
+                        <input type="submit" value="Cerca">
+                    </div>
+                    <button id="write-email">
+                        Scrivi una nuoma e-mail
+                    </button>
+                    <p id="unread-email">
+                        Hai
                         <span>2</span>
-                         messaggio da leggere
+                        messaggi da leggere
                     </p>
                 </div>
-            </nav>
-            <!-- inizio sezione dedicata alla lista dei messaggi in casella -->
-            <section id="email-list">
-                <h3>Lista messaggi</h3>
-                <div>
-                    <input type="checkbox" name="riquadro-selezione" value="">
-                    <strong>
-                        Messaggio da ebay - OGGETTO: esito transazione
-                    </strong>
+                <!-- lista email -->
+                <div id="email-list">
+                    <h3>Lista messaggi</h3>
+                    <div class="email-item">
+                        <input type="checkbox">
+                        <p>
+                            <strong>
+                                Messaggio da ebay - OGGETTO: esito transazione
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="email-item">
+                        <input type="checkbox">
+                        <p>
+                            Messaggio da Maria - OGGETTO: dati fattura 2020
+                        </p>
+                    </div>
+                    <div class="email-item">
+                        <input type="checkbox">
+                        <p>
+                            Scopri le nostre offerte!!!
+                        </p>
+                    </div>
+                    <div class="email-item">
+                        <input type="checkbox">
+                        <p>
+                            <strong>
+                                Assistenza paypal
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="email-item">
+                        <input type="checkbox">
+                        <p>
+                            Slack
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <input type="checkbox" name="riquadro-selezione" value="">
-                    Messaggio da Maia - OGGETTO: dati fattura 2020
-                </div>
-                <div>
-                    <input type="checkbox" name="riquadro-selezione" value="">
-                    <strong>
-                        Scopri le nostre offerte!!!
-                    </strong>
-                </div>
-                <div>
-                    <input type="checkbox" name="riquadro-selezione" value="">
-                    Assistenza paypal
-                </div>
-                <div>
-                    <input type="checkbox" name="riquadro-selezione" value="">
-                    Slack
-                </div>
-            </section>
-        </main>
-        <hr>
-        <!-- parte dedicata al copiright-->
-        <footer>
-            <p>"Copiryght (2019) Google"</p>
-        </footer>
+            </main>
+            <!-- inizio footer -->
+            <footer>
+                <p>
+                    "Copiryght (2019) Google"
+                </p>
+            </footer>
+        </div>
     </body>
 </html>
