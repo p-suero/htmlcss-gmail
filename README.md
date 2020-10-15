@@ -1,1 +1,1 @@
-<p> #1 Replica casella di posta Gmail (primi layout con proprietà CSS basilari) </p>
+<p> #1 Replica casella di posta Gmail con l'utilizzo delle sole proprietà basi di CSS </p>
